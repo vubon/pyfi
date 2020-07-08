@@ -16,8 +16,10 @@ sudo chmod +x /usr/local/bin/pyfi
 ```
  
 ## Example 
-```python
-# You will get bKash Payload if everything is okay. 
+```shell script
+pyfi <file name or directory name>
+
+pyfi hello.pdf 
 ```
 To learn more [Documentation](./docs/GUIDE.md).
 

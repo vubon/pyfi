@@ -21,8 +21,8 @@ def get_log_description():
 
 
 setup(
-    name='PyFileSender',
-    version=get_version('PyFileSender'),
+    name='PyFi',
+    version=get_version('PyFi'),
     author='Vubon Roy',
     author_email='vubon.roy@gmail.com',
     description='This package will help to send file into mobile or other computer',
@@ -41,7 +41,7 @@ setup(
         'pyinstaller',
     ],
     classifiers=[
-        'Development Status :: 1 - Planning',  # 2 - Pre-Alpha, 3 - Alpha, 4 - Beta, 5 - Production/Stable
+        'Development Status :: 1 - Alpha',  # 2 - Pre-Alpha, 3 - Alpha, 4 - Beta, 5 - Production/Stable
         "License :: OSI Approved :: MIT License",
         "Environment :: Console",
         "Intended Audience :: Customer Service",

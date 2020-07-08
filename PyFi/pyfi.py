@@ -2,7 +2,6 @@
 Prototype: Bla bla bla
 
 """
-import os
 import sys
 import argparse
 
@@ -21,7 +20,7 @@ class PySender:
             print("Send file or full directory over wifi................")
             print(f"Server is running on http://{self.__ip}:{self.__port}")
             qr_generator(host=self.__ip, port=str(self.__port), path=path)
-            run_server("//", self.__port)
+            run_server(self.__port)
         except KeyboardInterrupt:
             sys.exit()
 
@@ -31,7 +30,7 @@ def main():
     parser.add_argument("file", help="File name or directory name with full path or run where is existing the file")
     args = parser.parse_args()
     sender = PySender()
-    sender.run(os.getcwd() + "/" + args.file)
+    sender.run("/" + args.file)
     # sender.run(path='/home/vubon/personal/PyFi/dist/dog.jpg')
 
 
