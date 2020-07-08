@@ -8,7 +8,7 @@ PyFi is a short form. Py means Python, Fi means File and Wifi. PyFi is a file sh
 Download the latest file from the Release page. 
 ```shell script
 # Extract the archive
-tar xf pyfi_v0.0.1_linux_x86_64.tar.gz
+tar xf pyfi_v0.0.1_linux_x86_64.tar.xz
 # Copy the binary
 sudo mv pyfi /usr/local/bin
 # Set execution permissions
