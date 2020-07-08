@@ -21,7 +21,7 @@ pyfi <file name or directory name>
 
 pyfi hello.pdf 
 ```
-![Example](./docs/example.png)
+![Example](./docs/example2.png)<br>
 To learn more [Documentation](./docs/GUIDE.md).
 
 ## Changelog
