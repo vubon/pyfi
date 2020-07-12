@@ -21,6 +21,7 @@ pyfi <file name or directory name>
 
 pyfi hello.pdf 
 ```
+Now scan the QR Code by using your mobile phone. 
 ![Example](./docs/example2.png)<br>
 To learn more [Documentation](./docs/GUIDE.md).
 
