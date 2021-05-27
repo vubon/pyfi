@@ -1,5 +1,12 @@
-from http.server import SimpleHTTPRequestHandler
+"""
+Basic Server
+"""
 import socketserver
+
+from http.server import SimpleHTTPRequestHandler
+
+
+__version__ = "0.6"
 
 __all__ = [
     'run_server'

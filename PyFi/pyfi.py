@@ -37,4 +37,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    send = PyFi()
+    send.run("/" + "dog.jpg")

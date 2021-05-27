@@ -1,4 +1,6 @@
 import socket
+import string
+import random
 from subprocess import run, PIPE
 
 import qrcode
@@ -32,17 +34,31 @@ def qr_generator(host: str, port: str, path: str):
         border=2,
     )
     qr.add_data("http://" + host + ":" + port + path)
-    qr.make(fit=True)
+    qr.make()
     qr.print_ascii(tty=True)
 
 
 def get_ip_address():
+    """
+    Get IP address
+    :return:
+    """
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.connect(("8.8.8.8", 80))
     return s.getsockname()[0]
 
 
 def get_available_port():
+    """
+    Get available port
+    :return:
+    """
     for port in range(5000, 9001):
         if port not in [i.laddr.port for i in psutil.net_connections()]:
             return port
+
+
+def short_code():
+    """Short code"""
+    letters = string.ascii_lowercase + string.ascii_uppercase + string.digits
+    return "".join(random.choices(letters, k=8))
